@@ -1,60 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-
-    <record model="ir.ui.view" id="gyo.list">
-      <field name="name">gyo list</field>
-      <field name="model">gyo.gyo</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="gyo_cd"/>
-          <field name="gyo_nm"/>
-          <field name="gyo_komoku_cd"/>
-        </tree>
-      </field>
+    <record id="gyo_action" model="ir.actions.act_window">
+        <field name="name">gyo</field>
+        <field name="res_model">gyo.gyo</field>
+        <field name="view_mode">tree,form</field>
     </record>
-
-
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="gyo.action_window">
-      <field name="name">gyo window</field>
-      <field name="res_model">gyo.gyo</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="gyo.action_server">
-      <field name="name">gyo server</field>
-      <field name="model_id" ref="model_gyo_gyo"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="gyo" id="gyo.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="gyo.menu_1" parent="gyo.menu_root"/>
-    <menuitem name="Menu 2" id="gyo.menu_2" parent="gyo.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="gyo.menu_1_list" parent="gyo.menu_1"
-              action="gyo.action_window"/>
-    <menuitem name="Server to list" id="gyo" parent="gyo.menu_2"
-              action="gyo.action_server"/>
--->
-  </data>
 </odoo>

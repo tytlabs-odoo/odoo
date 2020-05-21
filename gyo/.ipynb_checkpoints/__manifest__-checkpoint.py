@@ -25,6 +25,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'views/menu.xml',
         'views/gyo.xml',
         'views/gyo_komoku.xml',
         'views/templates.xml',
