@@ -9,7 +9,7 @@
         <tree>
           <field name="gyo_cd"/>
           <field name="gyo_nm"/>
-          <field name="gyo_komoku_no"/>
+          <field name="gyo_komoku_cd"/>
         </tree>
       </field>
     </record>

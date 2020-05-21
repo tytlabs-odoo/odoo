@@ -7,9 +7,8 @@
       <field name="model">gyo.gyo_komoku</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="gyo_cd"/>
-          <field name="gyo_nm"/>
-          <field name="gyo_komoku_no"/>
+          <field name="gyo_komoku_cd"/>
+          <field name="gyo_komoku_nm"/>
         </tree>
       </field>
     </record>
