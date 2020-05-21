@@ -9,4 +9,4 @@ class gyo(models.Model):
 
     gyo_cd = fields.Char(string="業務番号")
     gyo_nm = fields.Char(string="業務名")
-    gyo_komoku_cd = fields.One2many('gyo.gyo_komoku','gyo_komoku_cd')
+    gyo_komoku = fields.One2many('gyo.gyo_komoku','gyo_komoku_cd' string="業務項目")
