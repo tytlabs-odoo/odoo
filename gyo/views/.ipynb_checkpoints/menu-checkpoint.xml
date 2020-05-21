@@ -2,19 +2,19 @@
 <odoo>
     <menuitem
             id="menu_root"
-            name="業務マスタ"
+            name="gyomu"
     />
 
     <menuitem
             id="gyo_menu"
-            name="業務"
+            name="gyomu"
             parent="gyo.menu_root"
             sequence="10"
     />
 
     <menuitem
             id="gyo_menu_action"
-            name="業務"
+            name="gyomu"
             parent="gyo.gyo_menu"
             sequence="10"
             action="gyo.gyo_action"
@@ -22,14 +22,14 @@
 
     <menuitem
             id="gyo_komoku_menu"
-            name="業務項目"
+            name="gyo_komoku"
             parent="gyo.menu_root"
             sequence="20"
     />
 
     <menuitem
             id="gyo_komoku_menu_action"
-            name="業務項目"
+            name="gyo_komoku"
             parent="gyo.gyo_menu"
             sequence="30"
             action="gyo.gyo_komoku_action"
