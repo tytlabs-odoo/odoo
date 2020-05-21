@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gyo_komoku_gyo_komoku,gyo_komoku.gyo_komoku,model_gyo_komoku_gyo_komoku,base.group_user,1,1,1,1
